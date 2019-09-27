@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zBj-1L-pKT">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="storyAdv" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dtr-Xx-sQp">
+                                <rect key="frame" x="20" y="-17" width="374" height="776"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">USS Orion. August 12th.  Currently orbiting Neptune.  Anomoly is 1,500 miles out.  Direct orders are to abort if conditions are considered hostile.  As lead of the ship and its 6 other crew members, the decision rests on your shoulders.  The clock is ticking.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ut5-TF-ybH">
+                                <rect key="frame" x="175" y="730" width="65" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="SoL-qS-uL2" kind="show" id="4HD-4c-w7W"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2Lx-h6-oGJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="126.5625"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gVk-gD-jRL">
+            <objects>
+                <viewController id="9eg-a3-HPh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e4N-KA-dmM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zdt-lH-Ab7">
+                                <rect key="frame" x="20" y="14" width="374" height="776"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">You return to Earth.  The original anomoly fades from radar. The new Anomoly now sits, orbitting earth in Syncronization with the Moon.  NASA continues to send Probes to investigate discovering a low density radiation being produced.  This energy is harnessed, and ushers in a new era of human society.  Centuries later, while humanity enjoys luxuries beyond imagination from this near infinity power source, it instantly blacks out and dissapears.  With mass panic errupting, NASA scrambles together a crew to investigate a new one that just appeared near Neptune.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQu-W2-nbU">
+                                <rect key="frame" x="25" y="779" width="365" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Investigate Anomoly Alpha"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="rKZ-mZ-yXJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="TJn-fb-7rj"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="FkU-fO-z42"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IU6-c3-iEY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1810" y="-1248"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="MrO-od-7Ec">
+            <objects>
+                <viewController id="7K4-Rb-qdI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hpc-rl-XUi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lap-Up-Jx8">
+                                <rect key="frame" x="20" y="-70" width="374" height="776"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">You abort.  Full thrusters inch the ship away from the Anomoly.  The safety of your crew matters more than this discovery.  Every drone sent into it loses signal instantly.  On your return to Earth, a second anomoly is detected, near earth.  You are redirected to investigate.  Do you enter the new Anomoly?</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNa-4X-fAA">
+                                <rect key="frame" x="25" y="660" width="364" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Investigate Anomoly Bravo"/>
+                                <connections>
+                                    <segue destination="9eg-a3-HPh" kind="show" id="aM9-x4-cX9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t0c-p8-DXr">
+                                <rect key="frame" x="104" y="719" width="205" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Return to Earth"/>
+                                <connections>
+                                    <segue destination="F6K-ZB-7FD" kind="show" id="etQ-y8-hiq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="FVh-eu-Afx"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3aN-XZ-2ZE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="guG-fP-RT5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1804" y="-568"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cFf-ZM-QIl">
+            <objects>
+                <viewController id="F6K-ZB-7FD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fXG-0Y-HQB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aX6-hp-PkD">
+                                <rect key="frame" x="20" y="0.0" width="374" height="658"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">You enter Anomoly Bravo.  Nasa always has a name for things, no matter how redundant it is.  Your crew support your decision, and you enter Anomoly Bravo.  A blinding darkness surrounds you as the ship violently shakes.  Emergency lights blare.  Sector 3B loses preasure, and you lock down the sector before the whole ship deos aswell.  You realize two crew were in that sector, and the reality sets in.  On the other side of the Anomoly, you find an Earth that isn't yours.  It is a crusty, industrial mess.  You fear the Anomoly did this, until an Unfamiliar voice blairs on the radio from NASA. "Orion 7, you are home early.  What was Anomoly Delta like?  Same old, or anything new to report?"</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5EZ-U5-5xB">
+                                <rect key="frame" x="82" y="735" width="254" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="&quot;What Anomoly Delta?&quot;"/>
+                                <connections>
+                                    <segue destination="JQ5-GF-0tT" kind="show" id="FBR-y2-4aI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2f-Zf-F07">
+                                <rect key="frame" x="38" y="674" width="343" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="&quot;This is the Orion.  Who is this?&quot;"/>
+                                <connections>
+                                    <segue destination="JQ5-GF-0tT" kind="show" id="Mx8-YM-lB5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="h7c-qK-LPH"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5Id-GO-PdW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7ga-g5-WvH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2518.840579710145" y="-569.19642857142856"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="sR1-12-YPx">
+            <objects>
+                <viewController id="JQ5-GF-0tT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vu3-7Y-SFe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="8AR-AA-nLK"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xC7-Ai-d5v"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="asP-Ts-rQB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3222" y="-569"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Fvi-BG-zXK">
+            <objects>
+                <viewController id="SoL-qS-uL2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CHU-lT-mId">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmI-OG-ucw">
+                                <rect key="frame" x="20" y="-69" width="374" height="776"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">The Orion shudders to a halt, as the event horizon sits infront of the ship.  It can only last so long in this position, as fuel is burning to hold out from the gravity sucking the ship towards it.  You are to evaluate the situation, and decide to call off the mission, or continue towards the horizon.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HgW-vI-MNE">
+                                <rect key="frame" x="113" y="634" width="190" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Abort Mission"/>
+                                <connections>
+                                    <segue destination="7K4-Rb-qdI" kind="show" id="QkX-Z2-xFn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLj-Qt-MUT">
+                                <rect key="frame" x="86" y="715" width="244" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Continue Forward"/>
+                                <connections>
+                                    <segue destination="kbC-6D-ykM" kind="show" id="pSk-uj-Whf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Vaa-0b-ff4"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BPF-gi-11N"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U5h-sd-dP7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1810.144927536232" y="124.55357142857142"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="AbG-CS-K9t">
+            <objects>
+                <viewController id="kbC-6D-ykM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gXv-WO-aDU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="mSQ-Za-dUl"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yix-4l-oGG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RRr-xs-MRb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1810" y="832"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BpT-Pk-0BP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zBj-1L-pKT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EVi-r0-m2x">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="b2z-Y8-iMM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZuV-6b-duu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="aM9-x4-cX9"/>
+        <segue reference="FBR-y2-4aI"/>
+        <segue reference="rKZ-mZ-yXJ"/>
+    </inferredMetricsTieBreakers>
+</document>
