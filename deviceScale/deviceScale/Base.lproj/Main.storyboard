@@ -81,7 +81,7 @@
                                 <rect key="frame" x="5" y="400.5" width="131.5" height="149"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jumped" translatesAutoresizingMaskIntoConstraints="NO" id="Sll-uo-wNL">
-                                <rect key="frame" x="141.5" y="400.5" width="131" height="149.00000000000023"/>
+                                <rect key="frame" x="141.5" y="400.5" width="131" height="149"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loops" translatesAutoresizingMaskIntoConstraints="NO" id="dTy-0X-b0b">
                                 <rect key="frame" x="277.5" y="400.5" width="131.5" height="149"/>
