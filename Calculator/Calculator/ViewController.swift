@@ -26,6 +26,43 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func didPressEquals(_ sender: Any) {
+        guard let labelInt:Int = Int (labelString)else {
+            return
+        }
+        if(currentMode == .not_set || lastButtonWasMode){
+            return
+        }
+        if( currentMode == .addition){
+            savedNum += labelInt
+        }else if (currentMode == .subtraction){
+            savedNum -= labelInt
+        }
+        currentMode = .not_set
+        labelString = "\(savedNum)"
+        updateText()
+        lastButtonWasMode = true
+    }
+    
+    @IBAction func didPressPlus(_ sender: Any) {
+        changeMode(newMode: .addition)
+    }
+    
+    @IBAction func didPressSubtract(_ sender: Any) {
+        changeMode(newMode: .subtraction)
+    }
+    
+    @IBAction func didPressClear(_ sender: Any) {
+        currentMode = .not_set
+        labelString = "0"
+        savedNum = 0
+    }
+    
+    
+    
+    
+    
     @IBAction func didPressNumber(_ sender: UIButton) {let stringValue:String? = sender.titleLabel?.text
         
         labelString = labelString.appending(stringValue!)
