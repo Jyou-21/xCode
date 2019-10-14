@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		362AE0CA2344FB16004FB5CF /* deviceScale.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = deviceScale.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		362AE0CA2344FB16004FB5CF /* instagramish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instagramish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		362AE0CD2344FB16004FB5CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		362AE0CF2344FB16004FB5CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		362AE0D12344FB16004FB5CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,7 +40,7 @@
 		362AE0C12344FB16004FB5CF = {
 			isa = PBXGroup;
 			children = (
-				362AE0CC2344FB16004FB5CF /* deviceScale */,
+				362AE0CC2344FB16004FB5CF /* instagramish */,
 				362AE0CB2344FB16004FB5CF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,12 +48,12 @@
 		362AE0CB2344FB16004FB5CF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				362AE0CA2344FB16004FB5CF /* deviceScale.app */,
+				362AE0CA2344FB16004FB5CF /* instagramish.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		362AE0CC2344FB16004FB5CF /* deviceScale */ = {
+		362AE0CC2344FB16004FB5CF /* instagramish */ = {
 			isa = PBXGroup;
 			children = (
 				362AE0CD2344FB16004FB5CF /* AppDelegate.swift */,
@@ -64,15 +64,15 @@
 				362AE0D82344FB1A004FB5CF /* LaunchScreen.storyboard */,
 				362AE0DB2344FB1A004FB5CF /* Info.plist */,
 			);
-			path = deviceScale;
+			path = instagramish;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		362AE0C92344FB16004FB5CF /* deviceScale */ = {
+		362AE0C92344FB16004FB5CF /* instagramish */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 362AE0DE2344FB1A004FB5CF /* Build configuration list for PBXNativeTarget "deviceScale" */;
+			buildConfigurationList = 362AE0DE2344FB1A004FB5CF /* Build configuration list for PBXNativeTarget "instagramish" */;
 			buildPhases = (
 				362AE0C62344FB16004FB5CF /* Sources */,
 				362AE0C72344FB16004FB5CF /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = deviceScale;
+			name = instagramish;
 			productName = deviceScale;
-			productReference = 362AE0CA2344FB16004FB5CF /* deviceScale.app */;
+			productReference = 362AE0CA2344FB16004FB5CF /* instagramish.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 362AE0C52344FB16004FB5CF /* Build configuration list for PBXProject "deviceScale" */;
+			buildConfigurationList = 362AE0C52344FB16004FB5CF /* Build configuration list for PBXProject "instagramish" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				362AE0C92344FB16004FB5CF /* deviceScale */,
+				362AE0C92344FB16004FB5CF /* instagramish */,
 			);
 		};
 /* End PBXProject section */
@@ -317,7 +317,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		362AE0C52344FB16004FB5CF /* Build configuration list for PBXProject "deviceScale" */ = {
+		362AE0C52344FB16004FB5CF /* Build configuration list for PBXProject "instagramish" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				362AE0DC2344FB1A004FB5CF /* Debug */,
@@ -326,7 +326,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		362AE0DE2344FB1A004FB5CF /* Build configuration list for PBXNativeTarget "deviceScale" */ = {
+		362AE0DE2344FB1A004FB5CF /* Build configuration list for PBXNativeTarget "instagramish" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				362AE0DF2344FB1A004FB5CF /* Debug */,

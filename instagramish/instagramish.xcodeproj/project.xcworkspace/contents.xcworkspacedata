@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:deviceScale.xcodeproj">
+      location = "self:/Users/jackyounger/Documents/GitHub/xCode/deviceScale/instagramish.xcodeproj">
    </FileRef>
 </Workspace>
