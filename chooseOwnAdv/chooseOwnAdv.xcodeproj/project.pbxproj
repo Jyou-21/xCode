@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		362AE0AA233E7028004FB5CF /* storyAdv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = storyAdv.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		362AE0AA233E7028004FB5CF /* chooseOwnAdv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chooseOwnAdv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		362AE0AD233E7028004FB5CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		362AE0AF233E7028004FB5CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		362AE0B1233E7028004FB5CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,7 +40,7 @@
 		362AE0A1233E7028004FB5CF = {
 			isa = PBXGroup;
 			children = (
-				362AE0AC233E7028004FB5CF /* storyAdv */,
+				362AE0AC233E7028004FB5CF /* chooseOwnAdv */,
 				362AE0AB233E7028004FB5CF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,12 +48,12 @@
 		362AE0AB233E7028004FB5CF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				362AE0AA233E7028004FB5CF /* storyAdv.app */,
+				362AE0AA233E7028004FB5CF /* chooseOwnAdv.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		362AE0AC233E7028004FB5CF /* storyAdv */ = {
+		362AE0AC233E7028004FB5CF /* chooseOwnAdv */ = {
 			isa = PBXGroup;
 			children = (
 				362AE0AD233E7028004FB5CF /* AppDelegate.swift */,
@@ -64,15 +64,15 @@
 				362AE0B8233E702B004FB5CF /* LaunchScreen.storyboard */,
 				362AE0BB233E702B004FB5CF /* Info.plist */,
 			);
-			path = storyAdv;
+			path = chooseOwnAdv;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		362AE0A9233E7028004FB5CF /* storyAdv */ = {
+		362AE0A9233E7028004FB5CF /* chooseOwnAdv */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 362AE0BE233E702B004FB5CF /* Build configuration list for PBXNativeTarget "storyAdv" */;
+			buildConfigurationList = 362AE0BE233E702B004FB5CF /* Build configuration list for PBXNativeTarget "chooseOwnAdv" */;
 			buildPhases = (
 				362AE0A6233E7028004FB5CF /* Sources */,
 				362AE0A7233E7028004FB5CF /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = storyAdv;
+			name = chooseOwnAdv;
 			productName = storyAdv;
-			productReference = 362AE0AA233E7028004FB5CF /* storyAdv.app */;
+			productReference = 362AE0AA233E7028004FB5CF /* chooseOwnAdv.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 362AE0A5233E7028004FB5CF /* Build configuration list for PBXProject "storyAdv" */;
+			buildConfigurationList = 362AE0A5233E7028004FB5CF /* Build configuration list for PBXProject "chooseOwnAdv" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				362AE0A9233E7028004FB5CF /* storyAdv */,
+				362AE0A9233E7028004FB5CF /* chooseOwnAdv */,
 			);
 		};
 /* End PBXProject section */
@@ -319,7 +319,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		362AE0A5233E7028004FB5CF /* Build configuration list for PBXProject "storyAdv" */ = {
+		362AE0A5233E7028004FB5CF /* Build configuration list for PBXProject "chooseOwnAdv" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				362AE0BC233E702B004FB5CF /* Debug */,
@@ -328,7 +328,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		362AE0BE233E702B004FB5CF /* Build configuration list for PBXNativeTarget "storyAdv" */ = {
+		362AE0BE233E702B004FB5CF /* Build configuration list for PBXNativeTarget "chooseOwnAdv" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				362AE0BF233E702B004FB5CF /* Debug */,
