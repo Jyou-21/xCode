@@ -23,6 +23,9 @@
                                 <rect key="frame" x="161" y="348" width="93" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Get Schedule"/>
+                                <connections>
+                                    <action selector="getSchedule:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y2e-I5-rbT"/>
+                                </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZfS-R3-qGZ">
                                 <rect key="frame" x="20" y="73" width="374" height="216"/>
@@ -32,12 +35,20 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="pBJ-rW-TJ9"/>
                                 </connections>
                             </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0L-Td-0Ot">
+                                <rect key="frame" x="43" y="375" width="329" height="362"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="dayPicker" destination="ZfS-R3-qGZ" id="Xt7-Q3-WPk"/>
+                        <outlet property="finalView" destination="B0L-Td-0Ot" id="mXm-BM-qVw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
