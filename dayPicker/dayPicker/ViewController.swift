@@ -57,6 +57,9 @@ class ViewController: UIViewController,UIPickerViewDelegate, UIPickerViewDataSou
         let weekDayRow = dayPicker.selectedRow(inComponent: 1)
         let weekDay = day[weekDayRow]
         
+        let dayTypeRow = dayPicker.selectedRow(inComponent: 2)
+        let dayType = 
+        
         let periodRotation:[String:[String]] = [
             "A":["A","B","Snack","D","E","Lunch"],
             "C":["C","A","Snack","F","D","Lunch"],
