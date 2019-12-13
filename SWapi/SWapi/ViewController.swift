@@ -11,17 +11,22 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var Label1: UILabel!
     
-    @IBAction func pressButton(_ sender: Any) {
-        let url: URL = URL(string: "https://swapi.co/api/people/1/")!
-        let responseData: Data? = try? Data(contentsOf: url)
-        if let responseData = responseData {
-            let json: Any = try! JSONSerialization.jsonObject(with: responseData, options: [])
-            let dictionary: [String: Any] = json as! [String: Any]
-            let name: String = dictionary["name"] as! String
-            Label1.text = name
-        }
+    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var Submit: UIButton!
+    
         
+    @IBAction func pressSubmit(_ sender: Any) {
+        let film = Int(textField.text!) ?? 1
+        let url: URL = URL(string: "https://swapi.co/api/films/" + "\(film)" + "/")!
+   let responseData: Data? = try? Data(contentsOf: url)
+   if let responseData = responseData {
+    let json: Any = try! JSONSerialization.jsonObject(with: responseData, options: [])
+    let dictionary: [String: Any] = json as! [String: Any]
+    let title: String = dictionary["title"] as! String
+    let episode_id: Int = dictionary["episode_id"] as! Int
+    Label1.text = " Episode \(episode_id):" + "\n\(title)"
     }
+}
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -29,4 +34,3 @@ class ViewController: UIViewController {
 
 
 }
-
