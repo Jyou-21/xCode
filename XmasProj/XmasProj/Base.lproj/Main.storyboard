@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="t07-5D-xJu">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller Main-->
+        <scene sceneID="dVQ-lj-val">
+            <objects>
+                <viewController id="5Ky-6D-TNo" customClass="ViewControllerMain" customModule="XmasProj" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jml-cX-gkg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JI9-tE-ZwX">
+                                <rect key="frame" x="149" y="117" width="116" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" title="People"/>
+                                <connections>
+                                    <action selector="clickPeople:" destination="5Ky-6D-TNo" eventType="touchUpInside" id="DpE-Ca-iCn"/>
+                                    <segue destination="jUz-o0-inN" kind="show" identifier="transferNames" id="AXp-Bv-Arj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gK2-b5-qB0">
+                                <rect key="frame" x="149" y="235" width="116" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" title="Films"/>
+                                <connections>
+                                    <action selector="clickFilms:" destination="5Ky-6D-TNo" eventType="touchUpInside" id="4su-xa-9P0"/>
+                                    <segue destination="jUz-o0-inN" kind="show" identifier="transferNames" id="ttr-sc-tSv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Jy-eH-IW6">
+                                <rect key="frame" x="135" y="481" width="145" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" title="Vehicles"/>
+                                <connections>
+                                    <action selector="clickVehicles:" destination="5Ky-6D-TNo" eventType="touchUpInside" id="hmg-eQ-JTe"/>
+                                    <segue destination="jUz-o0-inN" kind="show" identifier="transferNames" id="gJI-DU-IIH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDf-57-QQH">
+                                <rect key="frame" x="135" y="608" width="145" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" title="Species"/>
+                                <connections>
+                                    <action selector="clickSpecies:" destination="5Ky-6D-TNo" eventType="touchUpInside" id="9Wx-1E-hXW"/>
+                                    <segue destination="jUz-o0-inN" kind="show" identifier="transferNames" id="mhy-a4-rVF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xe5-lW-OAD">
+                                <rect key="frame" x="135" y="739" width="145" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" title="Planets"/>
+                                <connections>
+                                    <action selector="clickPlanets:" destination="5Ky-6D-TNo" eventType="touchUpInside" id="OB8-lc-BlA"/>
+                                    <segue destination="jUz-o0-inN" kind="show" identifier="transferNames" id="HDY-xp-wLN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="01R-Yh-OIS">
+                                <rect key="frame" x="135" y="354" width="145" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" title="Starships"/>
+                                <connections>
+                                    <action selector="clickStarships:" destination="5Ky-6D-TNo" eventType="touchUpInside" id="Kpd-jG-Q1B"/>
+                                    <segue destination="jUz-o0-inN" kind="show" identifier="transferNames" id="eLq-kl-Jkx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="SSv-ZX-qkB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="GOf-PY-CJ8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YLF-9C-MXO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1079.7101449275362" y="-54.241071428571423"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="U4T-Kz-Jjr">
+            <objects>
+                <tableViewController id="jUz-o0-inN" customClass="TableViewController" customModule="XmasProj" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="His-09-Kte">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="lZo-Jm-DtJ">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lZo-Jm-DtJ" id="rPg-lZ-M77">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="fMI-2e-yGF" kind="show" id="GZQ-1t-X7r"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="jUz-o0-inN" id="vz0-uK-Vw1"/>
+                            <outlet property="delegate" destination="jUz-o0-inN" id="N08-rY-KQm"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="YAp-al-IoQ"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ff5-Yy-ohA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1791.304347826087" y="-54.241071428571423"/>
+        </scene>
+        <!--View Controller Info-->
+        <scene sceneID="P8Y-UH-rXw">
+            <objects>
+                <viewController id="fMI-2e-yGF" customClass="ViewControllerInfo" customModule="XmasProj" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mo0-oc-rtd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sample" lineBreakMode="tailTruncation" numberOfLines="32" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X04-De-9d0">
+                                <rect key="frame" x="20" y="88" width="374" height="774"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="8kU-CF-Jg6"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qIW-Ym-TGT"/>
+                    <connections>
+                        <outlet property="infoLabel" destination="X04-De-9d0" id="FMt-t6-RKA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cb5-VW-9kq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2497.1014492753625" y="-54.241071428571423"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9Mk-CJ-Wsm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="t07-5D-xJu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1Fa-sO-7HG">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5Ky-6D-TNo" kind="relationship" relationship="rootViewController" id="CbG-wB-ek6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OCQ-de-sym" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="169.56521739130437" y="-54.241071428571423"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="HDY-xp-wLN"/>
+    </inferredMetricsTieBreakers>
+</document>
