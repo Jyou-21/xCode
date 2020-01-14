@@ -19,7 +19,9 @@
                                 <rect key="frame" x="149" y="117" width="116" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <state key="normal" title="People"/>
+                                <state key="normal" title="People">
+                                    <color key="titleColor" red="1" green="0.89512283790000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="clickPeople:" destination="5Ky-6D-TNo" eventType="touchUpInside" id="DpE-Ca-iCn"/>
                                     <segue destination="jUz-o0-inN" kind="show" identifier="transferNames" id="AXp-Bv-Arj"/>
@@ -29,7 +31,9 @@
                                 <rect key="frame" x="149" y="235" width="116" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <state key="normal" title="Films"/>
+                                <state key="normal" title="Films">
+                                    <color key="titleColor" red="1" green="0.89512283790000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="clickFilms:" destination="5Ky-6D-TNo" eventType="touchUpInside" id="4su-xa-9P0"/>
                                     <segue destination="jUz-o0-inN" kind="show" identifier="transferNames" id="ttr-sc-tSv"/>
@@ -39,7 +43,9 @@
                                 <rect key="frame" x="135" y="481" width="145" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <state key="normal" title="Vehicles"/>
+                                <state key="normal" title="Vehicles">
+                                    <color key="titleColor" red="1" green="0.89512283790000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="clickVehicles:" destination="5Ky-6D-TNo" eventType="touchUpInside" id="hmg-eQ-JTe"/>
                                     <segue destination="jUz-o0-inN" kind="show" identifier="transferNames" id="gJI-DU-IIH"/>
@@ -49,7 +55,9 @@
                                 <rect key="frame" x="135" y="608" width="145" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <state key="normal" title="Species"/>
+                                <state key="normal" title="Species">
+                                    <color key="titleColor" red="1" green="0.89512283790000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="clickSpecies:" destination="5Ky-6D-TNo" eventType="touchUpInside" id="9Wx-1E-hXW"/>
                                     <segue destination="jUz-o0-inN" kind="show" identifier="transferNames" id="mhy-a4-rVF"/>
@@ -59,7 +67,9 @@
                                 <rect key="frame" x="135" y="739" width="145" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <state key="normal" title="Planets"/>
+                                <state key="normal" title="Planets">
+                                    <color key="titleColor" red="1" green="0.89512283790000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="clickPlanets:" destination="5Ky-6D-TNo" eventType="touchUpInside" id="OB8-lc-BlA"/>
                                     <segue destination="jUz-o0-inN" kind="show" identifier="transferNames" id="HDY-xp-wLN"/>
@@ -69,14 +79,16 @@
                                 <rect key="frame" x="135" y="354" width="145" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <state key="normal" title="Starships"/>
+                                <state key="normal" title="Starships">
+                                    <color key="titleColor" red="1" green="0.89512283790000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="clickStarships:" destination="5Ky-6D-TNo" eventType="touchUpInside" id="Kpd-jG-Q1B"/>
                                     <segue destination="jUz-o0-inN" kind="show" identifier="transferNames" id="eLq-kl-Jkx"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="SSv-ZX-qkB"/>
                     </view>
                     <navigationItem key="navigationItem" id="GOf-PY-CJ8"/>
@@ -92,15 +104,22 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="His-09-Kte">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="separatorColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexColor" red="1" green="0.89512283790000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sectionIndexBackgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sectionIndexTrackingBackgroundColor" red="1" green="0.89512283790000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="lZo-Jm-DtJ">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="gray" indentationWidth="10" reuseIdentifier="cell" id="lZo-Jm-DtJ">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lZo-Jm-DtJ" id="rPg-lZ-M77">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="tintColor" red="1" green="0.89512283790000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <segue destination="fMI-2e-yGF" kind="show" id="GZQ-1t-X7r"/>
                                 </connections>
@@ -129,11 +148,11 @@
                                 <rect key="frame" x="20" y="88" width="374" height="774"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="1" green="0.89512283790000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="8kU-CF-Jg6"/>
                     </view>
                     <navigationItem key="navigationItem" id="qIW-Ym-TGT"/>
