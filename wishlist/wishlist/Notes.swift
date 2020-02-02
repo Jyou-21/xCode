@@ -7,7 +7,7 @@
 //
 import Foundation
 
-class Note{
+class Note: Codable{
     var note:String = "For christmas, I wish for "
     var date:Date = Date()
 }

@@ -10,20 +10,21 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
-    var wishData: [wishItem] = []
 
-    var notes:[Note] = [Note]()
+    var wishData:[Note] = [Note]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let note = Note()
         note.note = "I wish for"
-        notes.append(note)
+        wishData.append(note)
         
         let note2 = Note()
         note2.note = "I also wish for"
-        notes.append(note2)
-        
-        print(notes)
+        wishData.append(note2)
+        if let existingWishes = load(){
+            wishData = existingWishes
+        }
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -31,13 +32,13 @@ class TableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return notes.count
+        return wishData.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdent", for: indexPath)
 
-        let title = notes[indexPath.row].note
+        let title = wishData[indexPath.row].note
      cell.textLabel?.text = title
         return cell
     }
@@ -49,13 +50,13 @@ class TableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     let vc = segue.destination as! ViewController
         if let indexPath = self.tableView.indexPathForSelectedRow{
-            let currentnote = self.notes[indexPath.row]
+            let currentnote = self.wishData[indexPath.row]
             vc.currentnote = currentnote
 
         }
         else{
             let currentnote = Note()
-            notes.append(currentnote)
+            wishData.append(currentnote)
             vc.currentnote = currentnote
         }
     }
@@ -64,9 +65,9 @@ class TableViewController: UITableViewController {
         save()
     }
     
-    func load() -> [wishItem]? {
+    func load() -> [Note]? {
         if let url = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false), let data = try? Data(contentsOf: url.appendingPathComponent("wishlist.json")) {
-            let wishData = try? JSONDecoder().decode([wishItem].self, from: data)
+            let wishData = try? JSONDecoder().decode([Note].self, from: data)
             return wishData
         }
         return nil
@@ -74,6 +75,7 @@ class TableViewController: UITableViewController {
     
     func save() {
         if let url = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false), let data = try? JSONEncoder().encode(wishData) {
+            print(url)
             do {
                 try data.write(to: url.appendingPathComponent("wishlist.json"))
             } catch {
