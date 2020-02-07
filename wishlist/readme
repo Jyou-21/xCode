@@ -1,4 +1,14 @@
-Wishlist App Feature 
+READ ME
+
+
+This app aims to organize and log everything someone might want for christmas, forgoeing the need to remember it, or use ancient technology such as pencil and paper.  
+You can create new wishes, or edit currently existing ones, all while knowing they are saved regardless if you open and close the app.
+
+An obstacle I had with this project was loading the Data from the saved file, but Riley helped me fix this in class.
+I wish I had more time to implement more features from my feature list, to really make this project shine, but deadlines are deadlines.
+
+
+Original Feature List:
 
 A User can create a wishlist item so that they can keep track of what they want for Christmas.
 A User can view a list of their created items so that they can see an overview of everything they want.
