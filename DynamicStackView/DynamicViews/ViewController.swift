@@ -1,9 +1,9 @@
 //
 //  ViewController.swift
-//  DynamicStackView
+//  DynamicViews
 //
-//  Created by Jack Younger on 2/6/20.
-//  Copyright © 2020 Jack Younger. All rights reserved.
+//  Created by Riley John Gibbs on 2/6/20.
+//  Copyright © 2020 Riley John Gibbs. All rights reserved.
 //
 
 import UIKit
@@ -14,7 +14,5 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
 }
 
