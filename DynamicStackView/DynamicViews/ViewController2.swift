@@ -12,7 +12,7 @@ class ViewController2: UIViewController {
 
     @IBOutlet weak var StackView: UIStackView!
     
-    var imageCount = 50
+    var imageCount = 2
     var imageUsing = [UIImage]()
     let screenHeight = UIScreen.main.fixedCoordinateSpace.bounds.height
 
