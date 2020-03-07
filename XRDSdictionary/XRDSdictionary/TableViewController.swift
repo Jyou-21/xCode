@@ -64,9 +64,7 @@ class TableViewController: UITableViewController {
     }
      override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
      let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        
-        let title = vocabWords[indexPath.row]
-        cell.textLabel!.text = title
+        cell.textLabel!.text = vocabWords[indexPath.row]
         return cell
      }
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

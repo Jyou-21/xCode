@@ -1,25 +1,19 @@
 //
-//  Table View ControllerTableViewController.swift
-//  expandedTable
+//  TableViewController.swift
+//  photoTaker
 //
-//  Created by Jack Younger on 11/8/19.
-//  Copyright © 2019 Jack Younger. All rights reserved.
+//  Created by Jack Younger on 3/4/20.
+//  Copyright © 2020 Jack Younger. All rights reserved.
 //
 
 import UIKit
 
-class Table_View_ControllerTableViewController: UITableViewController {
-/*
-    class boat{
-        init (){
-            
-        }
-        
-    }
-    */
-    let boat:[String:Dictionary] =
-        ["SS PeepoHappy":]
+class TableViewController: UITableViewController {
     
+    var imageCount: Int!
+    var imageNames: [String]!
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -39,18 +33,28 @@ class Table_View_ControllerTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return imageNames.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
-        // Configure the cell...
-
+        cell.imageView!.image = getSavedImage(named: "\(imageNames.first!).png")
+        cell.textLabel!.text = "\(imageNames.first ?? "error")"
+        try imageNames.removeFirst(1)
         return cell
     }
-    */
+    
+    func getSavedImage(named: String) -> UIImage? {
+        if let dir = try? FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false) {
+            return UIImage(contentsOfFile: URL(fileURLWithPath: dir.absoluteString).appendingPathComponent(named).path)
+        }
+        return nil
+    }
+    
+    func applyFilter() {
+        
+    }
 
     /*
     // Override to support conditional editing of the table view.
@@ -87,14 +91,11 @@ class Table_View_ControllerTableViewController: UITableViewController {
     }
     */
 
-    /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        let vc = segue.destination as! ViewController
+        let indexPath = self.tableView.indexPathForSelectedRow
     }
-    */
 
 }
