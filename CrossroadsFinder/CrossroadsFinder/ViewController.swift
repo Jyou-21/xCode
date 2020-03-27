@@ -8,18 +8,23 @@
 import MapKit
 import UIKit
 
-class ViewController: UIViewController, MKMapViewDelegate {
+class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     
     @IBOutlet weak var topLabel: UILabel!
     @IBOutlet weak var mapView: MKMapView!
     let crossPoint = MKMapPoint(CLLocationCoordinate2D(latitude: 34.0246, longitude: -118.4739))
     let stanPoint = MKMapPoint(CLLocationCoordinate2D(latitude: 37.4275, longitude: -122.1697))
     let vanPoint = MKMapPoint(CLLocationCoordinate2D(latitude: 36.1447, longitude: -86.8027))
+    var currPoint = MKMapPoint(CLLocationCoordinate2D(latitude: 35, longitude: -75))
     var inframe: [String] = []
+    var locationManager: CLLocationManager!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        locationManager = CLLocationManager()
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
         mapView.delegate = self
     }
     
@@ -69,9 +74,13 @@ class ViewController: UIViewController, MKMapViewDelegate {
             return "\(inframe[0]) and \(inframe[1]) are in view!"
         }else if inframe.count == 3 {
             return "\(inframe[0]), \(inframe[1]), and \(inframe[2]) are all in frame!"
-        }else {return "This message should never display.  If you see this, the world is ending"
-        }
-        
+        }else if inframe.count == 4 {
+            return "\(inframe[3]), \(inframe[2]), \(inframe[1]), and \(inframe[0]) are all in frame!"
+        }else {return "Nothing is in View!"}
+    }
+    
+    @IBAction func findMe(_ sender: Any) {
+        locationManager.requestLocation()
     }
     
     func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
@@ -88,8 +97,24 @@ class ViewController: UIViewController, MKMapViewDelegate {
         if rect.contains(crossPoint) {
             inframe.append("Crossroads")
         }
+        if rect.contains(currPoint) {
+            inframe.append("you")
+        }
         print(inframe)
         topLabel.text = createTopLabel(inframe:inframe)
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let span = mapView.region.span
+        let coords = locations.suffix(1)[0].coordinate
+        let newRegion = MKCoordinateRegion(center: coords, span: span)
+        mapView.setRegion(newRegion, animated: true)
+        guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
+        currPoint = MKMapPoint(CLLocationCoordinate2D(latitude: locValue.latitude, longitude: locValue.longitude))
+    }
+
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print(error)
     }
 }
 
