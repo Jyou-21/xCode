@@ -28,17 +28,26 @@ class GameManager {
         scene.playerPositions.append((10, 11))
         scene.playerPositions.append((10, 12))
         renderChange()
-        generateNewPoint()
+        generateNewPoint(point: 1)
+        generateNewPoint(point: 2)
+        generateNewPoint(point: 3)
     }
     
-    private func generateNewPoint() {
+    private func generateNewPoint(point:Int) {
         var randomX = CGFloat(arc4random_uniform(19))
         var randomY = CGFloat(arc4random_uniform(39))
         while contains(a: scene.playerPositions, v: (Int(randomX), Int(randomY))) {
             randomX = CGFloat(arc4random_uniform(19))
             randomY = CGFloat(arc4random_uniform(39))
         }
-        scene.scorePos = CGPoint(x: randomX, y: randomY)
+        if point == 3 {
+            scene.scorePos3 = CGPoint(x: randomX, y: randomY)
+        }else if point == 2 {
+            scene.scorePos2 = CGPoint(x: randomX, y: randomY)
+        }else if point == 1 {
+            scene.scorePos1 = CGPoint(x: randomX, y: randomY)
+        }
+        
         
     }
     
@@ -48,8 +57,8 @@ class GameManager {
                 node.fillColor = SKColor.cyan
             } else {
                 node.fillColor = SKColor.clear
-                if scene.scorePos != nil {
-                    if Int((scene.scorePos?.x)!) == y && Int((scene.scorePos?.y)!) == x {
+                if scene.scorePos1 != nil {
+                    if Int((scene.scorePos1?.x)!) == y && Int((scene.scorePos1?.y)!) == x || Int((scene.scorePos2?.x)!) == y && Int((scene.scorePos2?.y)!) == x || Int((scene.scorePos3?.x)!) == y && Int((scene.scorePos3?.y)!) == x {
                         node.fillColor = SKColor.red
                     }
                 }
@@ -131,13 +140,43 @@ class GameManager {
     }
     
     private func checkForScore() {
-        if scene.scorePos != nil {
+        if scene.scorePos1 != nil {
             let x = scene.playerPositions[0].0
             let y = scene.playerPositions[0].1
-            if Int((scene.scorePos?.x)!) == y && Int((scene.scorePos?.y)!) == x {
+            if Int((scene.scorePos1?.x)!) == y && Int((scene.scorePos1?.y)!) == x ||
+                Int((scene.scorePos2?.x)!) == y && Int((scene.scorePos2?.y)!) == x ||
+                Int((scene.scorePos3?.x)!) == y && Int((scene.scorePos3?.y)!) == x {
                 currentScore += 1
                 scene.currentScore.text = "Score: \(currentScore)"
-                generateNewPoint()
+                generateNewPoint(point:1)
+                generateNewPoint(point:2)
+                generateNewPoint(point:3)
+                scene.playerPositions.append(scene.playerPositions.last!)
+                scene.playerPositions.append(scene.playerPositions.last!)
+                scene.playerPositions.append(scene.playerPositions.last!)
+            }
+        }else if scene.scorePos2 != nil {
+            let x = scene.playerPositions[0].0
+            let y = scene.playerPositions[0].1
+            if Int((scene.scorePos2?.x)!) == y && Int((scene.scorePos2?.y)!) == x {
+                currentScore += 1
+                scene.currentScore.text = "Score: \(currentScore)"
+                generateNewPoint(point:1)
+                generateNewPoint(point:2)
+                generateNewPoint(point:3)
+                scene.playerPositions.append(scene.playerPositions.last!)
+                scene.playerPositions.append(scene.playerPositions.last!)
+                scene.playerPositions.append(scene.playerPositions.last!)
+            }
+        }else if scene.scorePos3 != nil {
+            let x = scene.playerPositions[0].0
+            let y = scene.playerPositions[0].1
+            if Int((scene.scorePos3?.x)!) == y && Int((scene.scorePos3?.y)!) == x {
+                currentScore += 1
+                scene.currentScore.text = "Score: \(currentScore)"
+                generateNewPoint(point:1)
+                generateNewPoint(point:2)
+                generateNewPoint(point:3)
                 scene.playerPositions.append(scene.playerPositions.last!)
                 scene.playerPositions.append(scene.playerPositions.last!)
                 scene.playerPositions.append(scene.playerPositions.last!)
@@ -179,7 +218,9 @@ class GameManager {
                 updateScore()
                 playerDirection = 4
                 
-                scene.scorePos = nil
+                scene.scorePos1 = nil
+                scene.scorePos2 = nil
+                scene.scorePos3 = nil
                 scene.playerPositions.removeAll()
                 renderChange()
                 scene.currentScore.run(SKAction.scale(to: 0, duration: 0.4)) {

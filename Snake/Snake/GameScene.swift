@@ -19,7 +19,9 @@ class GameScene: SKScene {
     var gameBG: SKShapeNode!
     var gameArray: [(node: SKShapeNode, x: Int, y: Int)] = []
     var nodeList: [SKNode] = []
-    var scorePos: CGPoint?
+    var scorePos1: CGPoint?
+    var scorePos2: CGPoint?
+    var scorePos3: CGPoint?
     var game: GameManager!
     
     @objc func swipeR() {
